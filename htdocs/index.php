@@ -9,9 +9,7 @@ require __DIR__.'/../vendor/autoload.php';
 $app = new \Slim\Slim([]);
 
 // Slimにルートを登録
-$app->get('/',function(){
-    echo "Hellow,world!";
-});
+\Tinitter\Route::registration($app);
 
 // 実行
 $app->run();
